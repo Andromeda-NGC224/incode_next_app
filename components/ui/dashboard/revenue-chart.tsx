@@ -1,8 +1,9 @@
-import { generateYAxis } from "@/app/lib/utils";
+import { generateYAxis } from "@/lib/utils";
 import { CalendarIcon } from "@heroicons/react/24/outline";
-import { lusitana } from "@/app/ui/fonts";
+import { lusitana } from "@/components/fonts";
 
-import { fetchRevenue } from "@/app/lib/data";
+import { fetchRevenue } from "@/lib/db";
+import clsx from "clsx";
 
 export default async function RevenueChart() {
   const revenue = await fetchRevenue();
@@ -16,7 +17,7 @@ export default async function RevenueChart() {
 
   return (
     <div className="w-full md:col-span-4">
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h2 className={clsx(lusitana.className, "mb-4 text-xl md:text-2xl")}>
         Recent Revenue
       </h2>
 
