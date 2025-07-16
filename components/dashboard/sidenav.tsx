@@ -5,7 +5,7 @@ import { PowerIcon } from "@heroicons/react/24/outline";
 import { signOut } from "@/auth";
 
 import { AcmeLogo } from "@/components/ui";
-import { NavLinks } from "@/components/ui/dashboard";
+import { NavLinks } from "@/components/dashboard";
 
 export default function SideNav() {
   return (

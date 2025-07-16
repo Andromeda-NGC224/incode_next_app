@@ -6,10 +6,8 @@ import {
 } from "@/components/ui";
 
 import { Metadata } from "next";
-import { CardWrapper } from "@/components/ui/dashboard";
-import { lusitana } from "@/components/fonts";
-import { RevenueChart } from "@/components/ui/dashboard";
-import { LatestInvoices } from "@/components/ui/dashboard";
+import { CardWrapper, RevenueChart, LatestInvoices } from "@/components/dashboard";
+import { lusitana } from "@/lib/fonts";
 import clsx from "clsx";
 
 export const metadata: Metadata = {

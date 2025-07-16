@@ -5,6 +5,7 @@ export const authConfig = {
     signIn: "/login",
   },
   callbacks: {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     authorized({ auth, request: { nextUrl } }) {
       //   const isLoggedIn = !!auth?.user;
 
@@ -12,8 +13,7 @@ export const authConfig = {
       const isOnDashboard = nextUrl.pathname.startsWith("/dashboard");
 
       if (isOnDashboard) {
-        if (isLoggedIn) return true;
-        return false; // Redirect unauthenticated users to login page
+        return isLoggedIn
       } else if (isLoggedIn) {
         return Response.redirect(new URL("/dashboard", nextUrl));
       }

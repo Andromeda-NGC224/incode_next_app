@@ -1,6 +1,6 @@
 import { generateYAxis } from "@/lib/utils";
 import { CalendarIcon } from "@heroicons/react/24/outline";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/lib/fonts";
 
 import { fetchRevenue } from "@/lib/db";
 import clsx from "clsx";

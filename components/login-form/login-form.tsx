@@ -1,7 +1,7 @@
 import { AtSymbolIcon, KeyIcon } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/lib/fonts";
 import clsx from "clsx";
 import { Button } from "@/components/ui";
 

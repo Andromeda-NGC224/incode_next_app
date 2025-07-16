@@ -16,10 +16,10 @@ import { CustomerField, InvoiceForm } from "@/lib/types";
 export default function EditInvoiceForm({
   invoice,
   customers,
-}: {
+}: Readonly<{
   invoice: InvoiceForm;
   customers: CustomerField[];
-}) {
+}>) {
   const initialState: State = { message: null, errors: {} };
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   const [state, formAction] = useActionState(updateInvoiceWithId, initialState);
