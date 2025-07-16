@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { fetchCardData } from "@/lib/db";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/lib/fonts";
 import clsx from "clsx";
 
 const iconMap = {

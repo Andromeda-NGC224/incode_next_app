@@ -1,6 +1,5 @@
 import { fetchCustomers } from "@/lib/db";
-import { Breadcrumbs } from "@/components/ui/invoices";
-import { CreateInvoiceForm } from "@/components/ui/invoices";
+import { Breadcrumbs, CreateInvoiceForm } from "@/components/invoices";
 
 export default async function Page() {
   const customers = await fetchCustomers();

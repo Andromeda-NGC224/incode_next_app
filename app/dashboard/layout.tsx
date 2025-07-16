@@ -1,4 +1,4 @@
-import { SideNav } from "@/components/ui/dashboard";
+import { SideNav } from "@/components/dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

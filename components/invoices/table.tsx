@@ -7,15 +7,15 @@ import {
   DeleteInvoiceButton,
   InvoiceStatus,
   UpdateInvoiceButton,
-} from "@/components/ui/invoices";
+} from "@/components/invoices";
 
 export default async function InvoicesTable({
   query,
   currentPage,
-}: {
+}: Readonly<{
   query: string;
   currentPage: number;
-}) {
+}>) {
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (

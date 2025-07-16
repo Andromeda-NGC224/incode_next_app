@@ -2,7 +2,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 import Image from "next/image";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/lib/fonts";
 import { AcmeLogo } from "@/components/ui";
 import clsx from "clsx";
 

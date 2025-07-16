@@ -1,13 +1,11 @@
-import { Table } from "@/components/ui/invoices";
+import { Table, CreateInvoiceButton, Pagination } from "@/components/invoices";
 
-import { Search } from "@/components/ui";
-import { InvoicesTableSkeleton } from "@/components/ui";
+import { Search, InvoicesTableSkeleton } from "@/components/ui";
 import { Suspense } from "react";
 import { fetchInvoicesPages } from "@/lib/db";
 import { Metadata } from "next";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/lib/fonts";
 import clsx from "clsx";
-import { CreateInvoiceButton, Pagination } from "@/components/ui/invoices";
 
 export const metadata: Metadata = {
   title: "Invoices | Acme Dashboard",
