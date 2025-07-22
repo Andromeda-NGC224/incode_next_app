@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { NewsCards } from "./components";
+import { TitleH2 } from "@/components/ui";
 
 export default function LatestNewSection() {
   return (
@@ -23,7 +24,7 @@ export default function LatestNewSection() {
 
       {/*  Decoration Waves */}
       <div
-        className="absolute right-0 bottom-[-45%] sm:bottom-[-32%]  pointer-events-none 
+        className="absolute right-0 bottom-[-45%] sm:bottom-[-32%] pointer-events-none 
   w-[100%] h-[100%]
   
 "
@@ -48,16 +49,14 @@ export default function LatestNewSection() {
 
       {/* Content */}
 
-      <h2
-        className=" mx-auto text-main-text text-[28px] sm:text-[42px] md:text-[56px] xl:text-[96px] md:pb-4 relative
-  after:content-[''] after:absolute after:bottom-[-20px] after:left-1/2 after:-translate-x-1/2 
-  after:w-[50px] sm:after:w-[80px] md:after:w-[100px] xl:after:w-[140px]
-  after:h-[8px] sm:after:h-[12px] md:after:h-[16px] xl:after:h-[24px]
-  after:rounded-full
-  after:bg-gradient-to-b after:from-[#B2EBF2] after:to-[#D1C4E9]"
-      >
-        Latest <span className="font-semibold">News</span>
-      </h2>
+      <TitleH2
+        title={
+          <>
+            <span className="font-normal">Latest</span>
+            <span className="font-semibold">News</span>
+          </>
+        }
+      />
       <div className="flex flex-col gap-20 md:gap-30 items-center mx-auto">
         <p className="text-main-text  text-[14px] sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[42px] text-center">
           Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus

@@ -18,10 +18,7 @@ export default function Header() {
   return (
     <header className="w-full z-10 text-white flex items-center justify-between px-4 md:px-12 xl:px-24 py-3 ">
       <div
-        className="z-[-40] absolute top-0 right-0 pointer-events-none 
-  w-[300px] h-[300px]         // Мобильные (по умолчанию)
-  md:w-[600px] md:h-[600px]    // ≥768px
-  xl:w-[1000px] xl:h-[1000px]    // ≥1280px
+        className="z-[-40] absolute top-0 right-0 pointer-events-none w-[300px] h-[300px] md:w-[600px] md:h-[600px] xl:w-[1000px] xl:h-[1000px]
 "
       >
         {/* First layer */}
@@ -49,10 +46,7 @@ export default function Header() {
           width={200}
           height={200}
           className="absolute top-0 right-0 z-[-10]
-           w-[200px] h-[200px] // Мобильные (по умолчанию)
-           md:w-[400px] md:h-[400px] // ≥768px
-           xl:w-[650px] xl:h-[700px] // ≥1280px
-           "
+           w-[200px] h-[200px] md:w-[400px] md:h-[400px] xl:w-[650px] xl:h-[700px] "
         />
       </div>
 
@@ -84,11 +78,7 @@ export default function Header() {
                 ? "text-purple-text relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:rounded-full after:bg-purple-dark"
                 : "text-main-text hover:text-purple-text"
             } 
-      text-sm 
-      md:text-base  // 16px для 768px+
-      lg:text-lg    // 18px для 1024px+
-      xl:text-xl    // 20px для 1280px+
-      `}
+      text-sm md:text-base lg:text-lg xl:text-xl`}
           >
             {label}
           </SmoothScrollLink>
@@ -105,26 +95,14 @@ export default function Header() {
             rel="noopener noreferrer"
             aria-label={label}
             className={`
-        flex items-center justify-center 
-        transition-colors duration-200
-        rounded-full bg-[#a98fcc] hover:bg-purple-dark
-        w-8 h-8 text-[14px] 
-        sm:w-10 sm:h-10 sm:text-[22px]
-        md:w-12 md:h-12 md:text-[28px]
-        xl:w-[60px] xl:h-[60px] xl:text-[40px]
+        flex items-center justify-center transition-colors duration-200 rounded-full bg-[#a98fcc] hover:bg-purple-dark w-8 h-8 text-[14px] sm:w-10 sm:h-10 sm:text-[22px] md:w-12 md:h-12 md:text-[28px] xl:w-[60px] xl:h-[60px] xl:text-[40px]
 
       `}
           >
             <Icon />
           </Link>
         ))}
-        <FaCog
-          className="ml-2 text-[32px] 
-         sm:text-[40px]
-         md:text-[48px]
-         xl:text-[60px]
-        "
-        />
+        <FaCog className="ml-2 text-[32px] sm:text-[40px] md:text-[48px] xl:text-[60px]" />
       </div>
 
       {/* Burger */}

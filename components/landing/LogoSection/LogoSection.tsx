@@ -7,14 +7,12 @@ export default function LogoSection() {
         Nulla lobortis nunc vitae nisi
       </h2>
       <div className="flex gap-4 md:gap-8 xl:gap-12">
-        <div>
-          <Image
-            src="/LogoSectionImg.png"
-            alt="LogoSectionImg"
-            width={1400}
-            height={130}
-          />
-        </div>
+        <Image
+          src="/LogoSectionImg.png"
+          alt="LogoSectionImg"
+          width={1400}
+          height={130}
+        />
       </div>
     </section>
   );

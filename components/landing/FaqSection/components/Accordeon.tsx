@@ -12,7 +12,7 @@ export default function Accordeon() {
       {faqItems.map((item, index) => (
         <div key={index}>
           <button
-            className={`font-semibold w-full text-[18px] sm:text-[28px] md:text-[32px] xl:text-[38px] flex justify-between items-center text-left py-4 px-6 md:py-6 md:px-8 xl:py-12 xl:px-14  text-main-text rounded-2xl ${
+            className={`font-semibold w-full text-[16px] sm:text-[20px] md:text-[24px] xl:text-[32px] flex justify-between items-center text-left py-4 px-6 md:py-6 md:px-8 xl:py-12 xl:px-14  text-main-text rounded-2xl ${
               activeIndex === index
                 ? "rounded-b-none bg-gradient-to-tr from-[#311B92] to-[#006064]"
                 : "bg-paper"
@@ -29,7 +29,7 @@ export default function Accordeon() {
               activeIndex === index ? "max-h-96" : "max-h-0"
             }`}
           >
-            <p className="text-[18px] sm:text-[28px] md:text-[32px] xl:text-[38px] py-3 px-6 md:py-3 md:px-8 xl:py-10 xl:px-14 bg-paper text-main-text rounded-b-2xl">
+            <p className="text-[16px] sm:text-[20px] md:text-[24px] xl:text-[32px] py-3 px-6 md:py-3 md:px-8 xl:py-10 xl:px-14 bg-paper text-main-text rounded-b-2xl">
               {item.answer}
             </p>
           </div>

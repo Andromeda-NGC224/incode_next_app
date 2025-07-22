@@ -1,7 +1,7 @@
 import { FaShare } from "react-icons/fa";
 import { IoIosCheckmarkCircleOutline, IoIosStarOutline } from "react-icons/io";
 
-export const stats = [
+export const stats = Object.freeze([
   {
     value: "+200M",
     label: "Download",
@@ -17,4 +17,4 @@ export const stats = [
     label: "Rattings",
     icon: <IoIosStarOutline />,
   },
-];
+]);

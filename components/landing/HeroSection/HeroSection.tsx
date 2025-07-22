@@ -23,11 +23,11 @@ export default function HeroSection() {
       {/* Content */}
 
       <div className="flex-1">
-        <h1 className="text-main-text text-[28px] sm:text-[42px] md:text-[56px] xl:text-[96px] pb-6 md:pb-4">
-          Sed Imperdiet Enim li Vitae{" "}
+        <h1 className="text-main-text text-[24px] sm:text-[28px] md:text-[36px] xl:text-[58px] 2xl:text-[64px] pb-6 md:pb-4">
+          Sed Imperdiet Enim li Vitae
           <span className="text-purple-text font-bold">Viverra Justo</span>
         </h1>
-        <p className="text-main-text text-[16px] sm:text-[26px] md:text-[30px] xl:text-[60px]">
+        <p className="text-main-text text-[16px] sm:text-[22px] md:text-[24px] xl:text-[36px]">
           Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum sit amet
           tortor sit amet libero lobortis.
         </p>

@@ -1,4 +1,4 @@
-export const faqItems = [
+export const faqItems = Object.freeze([
   {
     question: "Pellentesque ac bibendum tortor?",
     answer:
@@ -20,4 +20,4 @@ export const faqItems = [
     question: "Pellentesque ac bibendum tortor?",
     answer: "Aenean sed adipiscing diam donec adipiscing tristique risus nec.",
   },
-];
+]);

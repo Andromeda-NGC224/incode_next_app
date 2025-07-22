@@ -7,3 +7,4 @@ export {
   CardsSkeleton,
   InvoicesTableSkeleton,
 } from "./skeletons";
+export { default as TitleH2 } from "./TitleH2";

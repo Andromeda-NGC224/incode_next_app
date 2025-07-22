@@ -1,3 +1,4 @@
+import { TitleH2 } from "@/components/ui";
 import Image from "next/image";
 
 export default function FeatureSection() {
@@ -6,16 +7,7 @@ export default function FeatureSection() {
       id="feature"
       className="p-4 xl:px-28 md:p-12 pt-24 md:pt-40  z-20 flex flex-col relative gap-12 md:gap-32 overflow-hidden"
     >
-      <h2
-        className="font-semibold mx-auto text-main-text text-[28px] sm:text-[42px] md:text-[56px] xl:text-[96px] md:pb-4 relative
-  after:content-[''] after:absolute after:bottom-[-20px] after:left-1/2 after:-translate-x-1/2 
-  after:w-[50px] sm:after:w-[80px] md:after:w-[100px] xl:after:w-[140px]
-  after:h-[8px] sm:after:h-[12px] md:after:h-[16px] xl:after:h-[24px]
-  after:rounded-full
-  after:bg-gradient-to-b after:from-[#B2EBF2] after:to-[#D1C4E9]"
-      >
-        Feature
-      </h2>
+      <TitleH2 title="Feature" />
 
       {/* First feature */}
 
@@ -31,13 +23,8 @@ export default function FeatureSection() {
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-4">
-              <span
-                className="rounded-full bg-[#006064] 
-    min-w-[16px] min-h-[16px] sm:min-w-[20px] sm:min-h-[20px] 
-    md:min-w-[25px] md:min-h-[25px] lg:min-w-[30px] lg:min-h-[30px] xl:min-w-[35px] xl:min-h-[35px]
-    "
-              ></span>
-              <h3 className="text-main-text font-semibold text-[24px] sm:text-[32px] md:text-[48px] lg:text-[60px] xl:text-[72px] ">
+              <span className="rounded-full bg-[#006064] min-w-[16px] min-h-[16px] sm:min-w-[20px] sm:min-h-[20px] md:min-w-[25px] md:min-h-[25px] lg:min-w-[30px] lg:min-h-[30px] xl:min-w-[35px] xl:min-h-[35px]"></span>
+              <h3 className="text-main-text font-semibold text-[24px] sm:text-[32px] md:text-[48px] lg:text-[60px] xl:text-[72px]">
                 Vivamus sit amet interdum
               </h3>
             </div>
@@ -57,8 +44,7 @@ export default function FeatureSection() {
             <div className="flex items-center gap-4">
               <span
                 className="rounded-full bg-[#006064] 
-    min-w-[16px] min-h-[16px] sm:min-w-[20px] sm:min-h-[20px] 
-    md:min-w-[25px] md:min-h-[25px] lg:min-w-[30px] lg:min-h-[30px] xl:min-w-[35px] xl:min-h-[35px]
+    min-w-[16px] min-h-[16px] sm:min-w-[20px] sm:min-h-[20px] md:min-w-[25px] md:min-h-[25px] lg:min-w-[30px] lg:min-h-[30px] xl:min-w-[35px] xl:min-h-[35px]
     "
               ></span>
               <h3 className="text-main-text font-semibold text-[24px] sm:text-[32px] md:text-[48px] lg:text-[60px] xl:text-[72px] ">
@@ -92,9 +78,7 @@ export default function FeatureSection() {
               </h3>
             </div>
             <span
-              className="block rounded-full bg-[#006064] 
-    w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] 
-    md:w-[25px] md:h-[25px] lg:w-[30px] lg:h-[30px] xl:w-[35px] xl:h-[35px]
+              className="block rounded-full bg-[#006064] w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] md:w-[25px] md:h-[25px] lg:w-[30px] lg:h-[30px] xl:w-[35px] xl:h-[35px]
     "
             ></span>
             <p className="text-main-text  text-[14px] sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[42px]">

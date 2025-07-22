@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { testimonialImages } from "./config";
+import { TitleH2 } from "@/components/ui";
 
 export default function TestimonialsSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(3);
@@ -12,16 +13,7 @@ export default function TestimonialsSection() {
       id="testimonials"
       className="p-4 xl:px-28 md:p-12 pt-24 md:pt-40 pb-30 md:pb-60 xl:pb-100 flex flex-col gap-12 md:gap-32"
     >
-      <h2
-        className="font-semibold mx-auto text-main-text text-[28px] sm:text-[42px] md:text-[56px] xl:text-[96px]  md:pb-4 relative
-  after:content-[''] after:absolute after:bottom-[-20px] after:left-1/2 after:-translate-x-1/2 
-  after:w-[50px] sm:after:w-[80px] md:after:w-[100px] xl:after:w-[140px]
-  after:h-[8px] sm:after:h-[12px] md:after:h-[16px] xl:after:h-[24px]
-  after:rounded-full
-  after:bg-gradient-to-b after:from-[#B2EBF2] after:to-[#D1C4E9]"
-      >
-        Testimonials
-      </h2>
+      <TitleH2 title="Testimonials" />
       <div className="flex flex-col gap-4 md:gap-10 items-center max-w-[1100px] mx-auto">
         <p className="text-main-text text-[18px] sm:text-[24px] md:text-[32px] xl:text-[36px] text-center italic">
           Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus

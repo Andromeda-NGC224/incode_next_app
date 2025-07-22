@@ -1,11 +1,1 @@
-export { default as Header } from "./Header/Header";
 export { default as BurgerMenuOverlay } from "./BurgerMenuOverlay/BurgerMenuOverlay";
-export { default as HeroSection } from "./HeroSection/HeroSection";
-export { default as Stats } from "./StatsSection/Stats";
-export { default as FeatureSection } from "./FeatureSection/FeatureSection";
-export { default as ShowcaseSection } from "./ShowcaseSection/ShowcaseSection";
-export { default as TestimonialsSection } from "./TestimonialsSection/TestimonialsSection";
-export { default as FaqSection } from "./FaqSection/FaqSection";
-export { default as LogoSection } from "./LogoSection/LogoSection";
-export { default as LatestNewSection } from "./LatestNewSection/LatestNewSection";
-export { default as Footer } from "./Footer/Footer";

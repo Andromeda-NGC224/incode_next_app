@@ -1,6 +1,6 @@
 import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 
-export const footerLinks = {
+export const footerLinks = Object.freeze({
   company: [
     "Donec dignissim",
     "Curabitur egestas",
@@ -14,9 +14,9 @@ export const footerLinks = {
     "Aliquam nec ex",
   ],
   legal: ["Suspendisse porttitor", "Nam posuere", "Curabitur egestas"],
-};
+});
 
-export const socialLinks = [
+export const socialLinks = Object.freeze([
   {
     href: "https://facebook.com",
     label: "Facebook",
@@ -37,4 +37,4 @@ export const socialLinks = [
     label: "Instagram",
     icon: FaInstagram,
   },
-];
+]);

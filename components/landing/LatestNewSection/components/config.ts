@@ -1,4 +1,4 @@
-export const cards = [
+export const cards = Object.freeze([
   {
     headline: "NEWS",
     text: "Sed imperdiet enim ligula, vitae viverra justo porta vel.",
@@ -9,4 +9,4 @@ export const cards = [
     text: "Sed imperdiet enim ligula, vitae viverra justo porta vel.",
     imageSrc: "/TheaterImg.jpg",
   },
-];
+]);

@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mx-auto mt-4 md:mt-6 lg:mt-8 flex flex-col lg:flex-row lg:justify-between gap-16 md:gap-18 lg:gap-24 xl:gap-28">
+        <div className="mx-auto mt-4 md:mt-6 lg:mt-8 flex flex-col xl:flex-row xl:justify-between gap-16 md:gap-18 lg:gap-20 xl:gap-24">
           {/* Logo */}
           <div className="flex flex-col items-center gap-1">
             <Link
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
 
           {/* Link Columns */}
-          <div className="flex flex-col sm:flex-row justify-center gap-16 md:gap-18 lg:gap-24 xl:gap-28">
+          <div className="flex flex-col sm:flex-row justify-center gap-16 md:gap-18 lg:gap-20 xl:gap-24">
             {Object.entries(footerLinks).map(([title, items]) => (
               <div
                 key={title}
@@ -97,7 +97,7 @@ export default function Footer() {
                   {items.map((text, i) => (
                     <li
                       key={i}
-                      className="transition-colors duration-200 cursor-pointer hover:text-purple-300 text-[16px] md:text-[18px] lg:text-[22px] xl:text-[24px]"
+                      className="transition-colors duration-200 cursor-pointer hover:text-purple-300 text-[16px] md:text-[18px] lg:text-[22px] xl:text-[22px]"
                     >
                       {text}
                     </li>
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
 
           {/* Social + Language */}
-          <div className="flex flex-col items-center lg:items-end gap-4 lg:gap-8">
+          <div className="flex flex-col items-center xl:items-end gap-4 lg:gap-8">
             {/* Social Icons */}
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
               {socialLinks.map(({ href, label, icon: Icon }) => (
@@ -118,16 +118,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className={`
-        flex items-center justify-center 
-        transition-colors duration-200
-        rounded-full bg-blue hover:bg-purple-dark
-        w-8 h-8 text-[14px] 
-        sm:w-10 sm:h-10 sm:text-[22px]
-        md:w-12 md:h-12 md:text-[28px]
-        xl:w-[60px] xl:h-[60px] xl:text-[40px]
-
-      `}
+                  className={`flex items-center justify-center transition-colors duration-200 rounded-full bg-blue hover:bg-purple-dark w-8 h-8 text-[14px] sm:w-10 sm:h-10 sm:text-[22px] md:w-12 md:h-12 md:text-[28px] xl:w-[60px] xl:h-[60px] xl:text-[40px]`}
                 >
                   <Icon />
                 </Link>
@@ -139,28 +130,7 @@ export default function Footer() {
               <span className="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none text-main-text">
                 <FaEarthAmericas className="mr-1 lg:text-[24px] xl:text-[28px] text-purple-text" />
               </span>
-              <select
-                className="
-      border 
-      border-purple-text
-      text-main-text 
-      bg-[#572f90]
-      lg:text-[24px] 
-      py-2 
-      lg:py-3 
-      rounded-xl 
-      appearance-none 
-      pl-10 
-      pr-10 
-      lg:pl-14 
-      lg:pr-14 
-      cursor-pointer 
-      outline-none 
-      hover:bg-purple-dark
-      transition-colors 
-      duration-200
-    "
-              >
+              <select className="border border-purple-text text-main-text bg-[#572f90] lg:text-[24px] py-2 lg:py-3 rounded-xl appearance-none pl-10 pr-10 lg:pl-14 lg:pr-14 cursor-pointer outline-none hover:bg-purple-dark transition-colors duration-200">
                 <option>English - En</option>
                 <option>Українська - Ua</option>
               </select>

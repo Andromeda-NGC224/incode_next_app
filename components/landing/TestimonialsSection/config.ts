@@ -1,4 +1,4 @@
-export const testimonialImages = [
+export const testimonialImages = Object.freeze([
   "/Testimonials1.png",
   "/Testimonials2.png",
   "/Testimonials3.png",
@@ -6,4 +6,4 @@ export const testimonialImages = [
   "/Testimonials5.png",
   "/Testimonials6.png",
   "/Testimonials7.png",
-];
+]);
