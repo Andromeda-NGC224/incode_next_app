@@ -6,3 +6,13 @@ export type State = {
   };
   message?: string | null;
 };
+
+export type RegisterFormState = {
+  errors?: {
+    name?: string[];
+    email?: string[];
+    password?: string[];
+    confirmPassword?: string[];
+  };
+  message?: string | null;
+};
