@@ -5,19 +5,24 @@ export const authConfig = {
     signIn: "/login",
   },
   callbacks: {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     authorized({ auth, request: { nextUrl } }) {
-      //   const isLoggedIn = !!auth?.user;
+      const isLoggedIn = !!auth?.user;
+      const isOnLanding = nextUrl.pathname === "/";
+      const isOnLogin = nextUrl.pathname === "/login";
+      const isOnRegister = nextUrl.pathname === "/register";
 
-      const isLoggedIn = true;
-      const isOnDashboard = nextUrl.pathname.startsWith("/dashboard");
-
-      if (isOnDashboard) {
-        return isLoggedIn
-      } else if (isLoggedIn) {
+      // If the user is authorized and tries to get to login/register - redirect from there
+      if (isLoggedIn && (isOnLogin || isOnRegister)) {
         return Response.redirect(new URL("/dashboard", nextUrl));
       }
-      return true;
+
+      // Allowing access to the landing and registration for unauthorized users
+      if (isOnLanding || isOnRegister || isOnLogin) {
+        return true;
+      }
+
+      // For all other pages we check authorization
+      return isLoggedIn;
     },
   },
   providers: [],

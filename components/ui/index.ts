@@ -7,3 +7,5 @@ export {
   CardsSkeleton,
   InvoicesTableSkeleton,
 } from "./skeletons";
+export { default as TitleH2 } from "./TitleH2";
+export { default as SocialEnterButtons } from "./SocialEnterButtons";

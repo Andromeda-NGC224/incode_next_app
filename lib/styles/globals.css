@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #303030;
+  --color-paper: #424242;
+
+  --color-main-text: #ffffff;
+
+  --color-pink-text: #e1bee7;
+
+  --color-purple-text: #d1c4e9;
+  --color-purple-dark: #673ab7;
+
+  --color-teal: #a5d6a7;
+
+  --color-blue: #00bcd4;
+
+  --animate-slideDown: slideDown 0.3s ease-out forwards;
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
