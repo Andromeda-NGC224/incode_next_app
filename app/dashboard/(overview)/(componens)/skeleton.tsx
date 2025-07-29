@@ -1,5 +1,9 @@
-import { CardSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/components/ui/skeletons";
-import { shimmer } from "@/lib/consts";
+import {
+  CardSkeleton,
+  LatestInvoicesSkeleton,
+  RevenueChartSkeleton,
+} from "@/components/ui/skeletons";
+import { shimmer } from "@/lib/сonstants";
 
 export function DashboardSkeleton() {
   return (

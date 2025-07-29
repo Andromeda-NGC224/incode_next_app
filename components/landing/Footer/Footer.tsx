@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mx-auto mt-4 md:mt-6 lg:mt-8 flex flex-col xl:flex-row xl:justify-between gap-16 md:gap-18 lg:gap-20 xl:gap-24">
+        <div className="mx-auto mt-4 md:mt-6 lg:mt-8 flex flex-col 2xl:flex-row 2xl:justify-between gap-16 md:gap-18 lg:gap-20 xl:gap-24">
           {/* Logo */}
           <div className="flex flex-col items-center gap-1">
             <Link
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
 
           {/* Social + Language */}
-          <div className="flex flex-col items-center xl:items-end gap-4 lg:gap-8">
+          <div className="flex flex-col items-center 2xl:items-end gap-4 lg:gap-8">
             {/* Social Icons */}
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
               {socialLinks.map(({ href, label, icon: Icon }) => (

@@ -1,5 +1,4 @@
-import { Breadcrumbs } from "@/components/ui/invoices";
-import { EditInvoiceForm } from "@/components/ui/invoices";
+import { Breadcrumbs, EditInvoiceForm } from "@/components/invoices";
 import { fetchInvoiceById, fetchCustomers } from "@/lib/db";
 import { notFound } from "next/navigation";
 
