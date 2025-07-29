@@ -1,5 +1,6 @@
 import { AI_MODEL_ID, Env } from "./config";
 
+// Nessesary syntax for Cloudflare Workers (handler is required)
 export default {
   fetch: async (request: Request, env: Env): Promise<Response> => {
     if (request.method !== "POST") {
