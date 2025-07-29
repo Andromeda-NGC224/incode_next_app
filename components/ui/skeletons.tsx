@@ -1,4 +1,4 @@
-import { shimmer } from "@/lib/consts";
+import { shimmer } from "@/lib/сonstants";
 
 export function CardSkeleton() {
   return (

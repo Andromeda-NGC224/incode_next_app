@@ -1,5 +1,6 @@
 import { SideNav } from "@/components/dashboard";
 import { Metadata } from "next";
+import ChatAssistant from "@/components/dashboard/chat-assistant/ChatAssistant";
 
 export const metadata: Metadata = {
   title: "Acme Dashboard",
@@ -12,6 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <SideNav />
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+      <ChatAssistant />
     </div>
   );
 }

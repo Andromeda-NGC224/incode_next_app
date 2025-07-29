@@ -1,0 +1,8 @@
+name = "workers-ai"
+main = "worker.ts"
+compatibility_date = "2024-01-01"
+
+[ai]
+binding = "AI"
+
+compatibility_flags = ["nodejs_compat"]
