@@ -56,7 +56,7 @@ export default function ChatAssistant() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const data = await response.json();
+      const data = (await response.json()) as { response: string };
       const aiResponse: Message = {
         id: Date.now(),
         text: data.response,
